@@ -22,7 +22,10 @@ from typing import Dict, Any, Optional, List
 app = FastAPI(title="Data Insight Dashboard")
 
 # CORS for frontend
-origins = ["http://localhost:3000"]
+origins = [
+    "http://localhost:3000",              # Local development
+    "https://frontend-wheat-ten-15.vercel.app",  # Vercel deployment
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -1087,4 +1090,5 @@ def analyze_query(query, dataset_info):
     
     # Default response
     return "I can answer questions about your dataset's shape, missing values, columns, correlations, and basic statistics. What would you like to know?"
+
 
