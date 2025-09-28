@@ -3,4 +3,8 @@ uvicorn[standard]
 pandas
 numpy
 matplotlib
+seaborn
+scikit-learn
+statsmodels
+pydantic
 python-multipart
