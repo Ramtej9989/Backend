@@ -1,1 +1,6 @@
-pip
+fastapi
+uvicorn[standard]
+pandas
+numpy
+matplotlib
+python-multipart
