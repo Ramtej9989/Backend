@@ -28,7 +28,7 @@ origins = [
 ]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -1090,6 +1090,7 @@ def analyze_query(query, dataset_info):
     
     # Default response
     return "I can answer questions about your dataset's shape, missing values, columns, correlations, and basic statistics. What would you like to know?"
+
 
 
 
